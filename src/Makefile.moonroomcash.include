@@ -1,0 +1,28 @@
+noinst_PROGRAMS += \
+  moonroomcash/GenerateParams \
+  moonroomcash/CreateJoinSplit
+
+# tool for generating our public parameters
+moonroomcash_GenerateParams_SOURCES = moonroomcash/GenerateParams.cpp
+moonroomcash_GenerateParams_CPPFLAGS = $(AM_CPPFLAGS)
+moonroomcash_GenerateParams_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+moonroomcash_GenerateParams_LDADD = \
+  $(BOOST_LIBS) \
+  $(LIBMRCCASH) \
+  $(LIBSNARK) \
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_CRYPTO) \
+  $(LIBMRCCASH_LIBS)
+
+# tool for profiling the creation of joinsplits
+moonroomcash_CreateJoinSplit_SOURCES = moonroomcash/CreateJoinSplit.cpp
+moonroomcash_CreateJoinSplit_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+moonroomcash_CreateJoinSplit_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+moonroomcash_CreateJoinSplit_LDADD = \
+  $(LIBBITCOIN_COMMON) \
+  $(LIBMRCCASH) \
+  $(LIBSNARK) \
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_CRYPTO) \
+  $(BOOST_LIBS) \
+  $(LIBMRCCASH_LIBS)

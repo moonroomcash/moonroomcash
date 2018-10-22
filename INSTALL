@@ -1,0 +1,5 @@
+Building Moonroomcash
+
+See the Moonroomcash github wiki (https://github.com/moonroomcash/moonroomcash/wiki) for instructions on building moonroomcashd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Moonroomcash.

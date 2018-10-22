@@ -1,0 +1,11 @@
+prefix=/root/ws/moonroomcash/depends/x86_64-unknown-linux-gnu
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Moonroomcash consensus library
+Description: Library for the Moonroomcash consensus protocol.
+Version: 1.1.0
+Libs: -L${libdir} -lmoonroomcashconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto

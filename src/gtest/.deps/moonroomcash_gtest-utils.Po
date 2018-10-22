@@ -1,0 +1,4 @@
+gtest/moonroomcash_gtest-utils.o: gtest/utils.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
