@@ -1,5 +1,5 @@
 # Moonroomcash 1.0.0
-#What is Moonroomcash?
+What is Moonroomcash?
 
 Moonroomcash is an implementation of the "Zerocash" protocol. Based on Bitcoin's code, it intends to offer a far higher standard of privacy through a sophisticated zero-knowledge proving scheme that preserves confidentiality of transaction metadata.
 
@@ -45,7 +45,6 @@ rpcport=16224
 #rpcallowip=1.2.3.4/255.255.255.0
 rpcallowip=127.0.0.1
 rpctimeout=30
-addnode=178.128.104.155
 gen=1
 equihashsolver=tromp
 showmetrics=1
@@ -74,3 +73,4 @@ cd moonroomcash
 Currently only Linux is officially supported.
 
 Windows version will be available soon.
+<p>For license information see the file https://github.com/moonroomcash/moonroomcash/blob/master/doc/user-guide/user-guide.mdUser-guide for moonroomcash
