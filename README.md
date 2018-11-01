@@ -57,7 +57,7 @@ showmetrics=1
 #rpcsslprivatekeyfile=server.pem
 
 
-
+```
 
 2. Fetch keys
 ```
@@ -73,5 +73,4 @@ cd moonroomcash
 Currently only Linux is officially supported.
 
 Windows version will be available soon.
-For license information see the file at  [User-guide for moonroomcash].
-[User-guide for moonroomcash](doc/user-guide/user-guide.md)
+user guide for moonroomcash available in (doc/user-guide/user-guide.md).
