@@ -1,5 +1,5 @@
 # Moonroomcash 1.0.0
-What is Moonroomcash?
+#What is Moonroomcash?
 
 Moonroomcash is an implementation of the "Zerocash" protocol. Based on Bitcoin's code, it intends to offer a far higher standard of privacy through a sophisticated zero-knowledge proving scheme that preserves confidentiality of transaction metadata.
 
@@ -30,14 +30,35 @@ cd moonroomcash
 #### Run Moonroomcash 
 1. Create moonroomcash.conf file
 ```
-cd
-mkdir .moonroomcash
+mkdir -p  ~/.moonroomcash
 echo "rpcuser=username" >> ~/.moonroomcash/moonroomcash.conf
 echo "rpcpassword=`head -c 32 /dev/urandom | base64`" >> ~/.moonroomcash/moonroomcash.conf
 echo "addnode=178.128.104.155" >> ~/.moonroomcash/moonroomcash.conf
 echo "addnode=173.249.16.174" >> ~/.moonroomcash/moonroomcash.conf
+please add those  command  in moonroomcash.conf file to complete moonroomcash.conf
+cd ~/.moonroomcash
+nano  moonroomcash.conf
+listen=1
+rpcport=16224
+#rpcallowip=10.1.1.34
+#rpcallowip=192.168.*.*
+#rpcallowip=1.2.3.4/255.255.255.0
+rpcallowip=127.0.0.1
+rpctimeout=30
+addnode=178.128.104.155
+gen=1
+equihashsolver=tromp
+showmetrics=1
+ #Use Secure Sockets Layer (also known as TLS or HTTPS) to communicate
+# with moonroomcash -server or moonroomcashd
+#rpcssl=1
+# OpenSSL settings used when rpcssl=1
+#rpcsslciphers=TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH
+#rpcsslcertificatechainfile=server.cert
+#rpcsslprivatekeyfile=server.pem
 
-```
+
+
 
 2. Fetch keys
 ```
@@ -47,7 +68,7 @@ cd moonroomcash
 
 3. Run a Moonroomcash node
 ```
-./src/moonroomcashd
+./src/moonroomcashd 
 ```
 
 Currently only Linux is officially supported.
