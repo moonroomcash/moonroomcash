@@ -73,4 +73,5 @@ cd moonroomcash
 Currently only Linux is officially supported.
 
 Windows version will be available soon.
-<p>For license information see the file https://github.com/moonroomcash/moonroomcash/blob/master/doc/user-guide/user-guide.mdUser-guide for moonroomcash
+For license information see the file at  [User-guide for moonroomcash].
+[User-guide for moonroomcash]: https://github.com/moonroomcash/moonroomcash/blob/master/doc/user-guide/user-guide.md
