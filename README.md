@@ -74,4 +74,4 @@ Currently only Linux is officially supported.
 
 Windows version will be available soon.
 For license information see the file at  [User-guide for moonroomcash].
-[User-guide for moonroomcash]: https://github.com/moonroomcash/moonroomcash/blob/master/doc/user-guide/user-guide.md
+[User-guide for moonroomcash](doc/user-guide/user-guide.md)
