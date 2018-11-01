@@ -128,13 +128,13 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("moonroomcash.tech", "dnsseed.moonroomcash.tech")); // Moonroomcash
-        vSeeds.push_back(CDNSSeedData("node.zel.cash", "seed.zel.cash")); // Moonroomcash
-        vSeeds.push_back(CDNSSeedData("node1.zel.cash", "dns.zel.cash")); // Moonroomcash
-        vSeeds.push_back(CDNSSeedData("vps.moonroomcash.online", "dnsseed.moonroomcash.online")); // TheTrunk
+        /////vSeeds.push_back(CDNSSeedData("node.zel.cash", "seed.zel.cash")); // Moonroomcash
+        ///////vSeeds.push_back(CDNSSeedData("node1.zel.cash", "dns.zel.cash")); // Moonroomcash
+        vSeeds.push_back(CDNSSeedData("vps.moonroomcash.online", "dnsseed.moonroomcash.online")); 
 
-        // guarantees the first 2 characters, when base58 encoded, are "t1"
+        // guarantees the first 2 characters, when base58 encoded, are "M1"
         base58Prefixes[PUBKEY_ADDRESS]     = {0x0B,0x43};
-        // guarantees the first 2 characters, when base58 encoded, are "t3"
+        // guarantees the first 2 characters, when base58 encoded, are "M3"
         base58Prefixes[SCRIPT_ADDRESS]     ={0x0A,0xBD};
         // the first character, when base58 encoded, is "5" or "K" or "L" (as in Bitcoin)
         base58Prefixes[SECRET_KEY]         = {0x80};
@@ -223,9 +223,9 @@ public:
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("vps.testnet.moonroomcash.online", "dnsseedtestnet.moonroomcash.online")); // TheTrunk
 
-        // guarantees the first 2 characters, when base58 encoded, are "tm"
+        // guarantees the first 2 characters, when base58 encoded, are "m1"
         base58Prefixes[PUBKEY_ADDRESS]     = {0x18,0xC7};
-        // guarantees the first 2 characters, when base58 encoded, are "t2"
+        // guarantees the first 2 characters, when base58 encoded, are "m2"
         base58Prefixes[SCRIPT_ADDRESS]     = {0x18,0xCC};
         // the first character, when base58 encoded, is "9" or "c" (as in Bitcoin)
         base58Prefixes[SECRET_KEY]         = {0xEF};
