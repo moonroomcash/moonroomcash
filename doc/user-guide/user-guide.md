@@ -1,28 +1,30 @@
-Build Moonroomcash on Linux(Ubuntu 16.04 Tested)
-
+## Build (Ubuntu 16.04 Tested)
 1. Get dependencies
-
-   sudo apt-get update
-    sudo apt-get install \
+```
+sudo apt-get update
+sudo apt-get install \
       build-essential pkg-config libc6-dev m4 g++-multilib \
       autoconf libtool ncurses-dev unzip git python \
       zlib1g-dev wget bsdmainutils automake curl
-      
-   2. Build
+```
+
+2. Build
 ```
 # pull
 git clone https://github.com/moonroomcash/moonroomcash.git
 cd moonroomcash
 # Build
 ./zcutil/build.sh -j$(nproc)
+```
 
+#### Run Moonroomcash 
 1. Create moonroomcash.conf file
 ```
 mkdir -p  ~/.moonroomcash
-
 echo "rpcuser=username" >> ~/.moonroomcash/moonroomcash.conf
 echo "rpcpassword=`head -c 32 /dev/urandom | base64`" >> ~/.moonroomcash/moonroomcash.conf
-
+echo "addnode=178.128.104.155" >> ~/.moonroomcash/moonroomcash.conf
+echo "addnode=173.249.16.174" >> ~/.moonroomcash/moonroomcash.conf
 please add those  command  in moonroomcash.conf file to complete moonroomcash.conf
 cd ~/.moonroomcash
 nano  moonroomcash.conf
@@ -34,7 +36,6 @@ rpcport=16224
 rpcallowip=127.0.0.1
 rpctimeout=30
 addnode=178.128.104.155
-addnode=173.249.16.174
 gen=1
 equihashsolver=tromp
 showmetrics=1
@@ -45,7 +46,7 @@ showmetrics=1
 #rpcsslciphers=TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH
 #rpcsslcertificatechainfile=server.cert
 #rpcsslprivatekeyfile=server.pem
-
+```
 
 
 
@@ -57,12 +58,13 @@ cd moonroomcash
 
 3. Run a Moonroomcash node
 ```
-./src/moonroomcashd 
+  ./src/moonroomcashd 
+```
 
+4. Run a Moonroomcash RPC Command
+```
 ./src/moonroomcashd --daemon(when daemon=1)
-  Moonroomcash Server Starting
-
-4. Check the RPC Commands that Moonroomcash Block Chain Is working Properly or Not
+ Moonroomcash Server Starting
 ./src/moonroomcash-cli getinfo 
 Returns an object containing various state info.
 ./src/moonroomcash-cli help
@@ -181,5 +183,5 @@ Exports all wallet keys, for taddr and zaddr, in a human-readable format.
 Results are an array of Objects
 ./src/moonroomcash-cli z_listoperationids
 Returns the list of operation ids currently known to the wallet.
-
+```
  
