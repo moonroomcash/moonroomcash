@@ -1,12 +1,19 @@
 # Moonroomcash 1.0.0
-What is Moonroomcash?
+
+ **What is Moonroomcash?**
 
 Moonroomcash is an implementation of the "Zerocash" protocol. Based on Bitcoin's code, it intends to offer a far higher standard of privacy through a sophisticated zero-knowledge proving scheme that preserves confidentiality of transaction metadata.
 
 This software is the Moonroomcash node and command-line client. It downloads and stores the entire history of Moonroomcash transactions; depending on the speed of your computer and network connection, the synchronization process could take a day or more once the blockchain has reached a significant size.
 
+* **P2P Port -** 16225  
+* **RPC Port -** 16224
 
-
+**Join the conversation on Discord:
+ https://discord.gg/38euHQX**
+ 
+ **Join the conversation on Telegram:
+  https://t.me/themoonroomchat**
 
 ## Build (Ubuntu 16.04 Tested)
 1. Get dependencies
@@ -73,4 +80,5 @@ cd moonroomcash
 Currently only Linux is officially supported.
 
 Windows version will be available soon.
-user guide for moonroomcash available in (doc/user-guide/user-guide.md).
+
+user guide for moonroomcash available in [doc/user-guide/user-guide.md](doc/user-guide/user-guide.md).
